@@ -1,10 +1,18 @@
 import time
 
+import colorama
+
 # Refresh-in-place line test
 
 progress = 0
-for i in range(10 + 1):
+complete = 100
+for i in range(complete + 1):
     progress = i
-    time.sleep(0.5)
+    time.sleep(0.05)
     print("\r", end="")
-    print("Poo Counter: " + "*" * progress + " " * (10 - progress) + "(" + str(progress) + ")", end='', flush=True)
+    if float(progress) / float(complete) < 0.5:
+        print(colorama.Fore.RED, end='')
+    else:
+        print(colorama.Fore.GREEN, end='')
+    print("Poo Counter: " + "*" * progress + " " * (complete - progress) + "(" + str(progress) + ")", end='',
+          flush=True)

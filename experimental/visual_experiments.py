@@ -2,6 +2,8 @@ import time
 
 import colorama
 
+colorama.init()
+
 # Refresh-in-place line test
 
 progress = 0
@@ -16,3 +18,5 @@ for i in range(complete + 1):
         print(colorama.Fore.GREEN, end='')
     print("Poo Counter: " + "*" * progress + " " * (complete - progress) + "(" + str(progress) + ")", end='',
           flush=True)
+
+colorama.deinit()

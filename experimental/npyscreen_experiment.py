@@ -1,7 +1,10 @@
 import npyscreen
+import time
 
-cryOS_form = npyscreen.Form()
+def myFunction(*args):
+    F = npyscreen.Form(name='My Test Application')
+    F.add(npyscreen.TitleText, name="First Widget")
+    F.edit()
 
-typy_box = cryOS_form.add_widget(npyscreen.TitleText, name="Name thing:")
-
-cryOS_form.edit()
+if __name__ == '__main__':
+    npyscreen.wrapper_basic(myFunction)

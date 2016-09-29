@@ -87,3 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+.idea/Cryophor-cryOS.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml

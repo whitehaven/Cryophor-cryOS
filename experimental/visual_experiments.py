@@ -4,8 +4,6 @@ import colorama
 
 colorama.init()
 
-# Refresh-in-place line test
-
 progress = 0
 complete = 100
 for i in range(complete + 1):

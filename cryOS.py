@@ -1,5 +1,5 @@
 import curses
-
+# TODO: investigate use of pygcurse terminal drawing. May have high overhead.
 from cryOSHardware import cryOSHardwareSet
 
 __version__ = 0.2

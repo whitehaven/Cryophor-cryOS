@@ -18,6 +18,7 @@ def main(cryOS_main):
 
         # Draw diagram of apparatus
         # cryOS_main.border()
+        # TODO: investigate using diagram as triple-quoted string, then splitlines(). Cleaner?
         for line_number, text in enumerate(cryophor0_1.diagram):
             cryOS_main.addstr(line_number + 2, 10, text)
 

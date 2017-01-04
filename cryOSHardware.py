@@ -45,6 +45,7 @@ class cryOSHardwareSet(object):
                             )
 
     def __repr__(self):
+        # TODO : change to str.format() IE return 'cryOSHardwareSet( some kwarg method thing )
         return 'cryOSHardwareSet(hardware_layout="' \
                + self.hardware_layout \
                + '", temp_sensors=' \
